@@ -117,7 +117,7 @@ ul {
 }
 .current::after {
   position: absolute;
-  top: 100%;
+  bottom: -5px;
   right: 0;
   display: block;
   content: '';
@@ -336,7 +336,6 @@ ul {
   right: 0;
   left: 0;
   width: 100%;
-  height: 70px;
   padding-top: 27px;
   padding-bottom: 27px;
   font-weight: 700;
@@ -576,7 +575,8 @@ ul {
   color: rgba(255, 255, 255, 1);
 }
 
-.example:hover .example-overlay {
+.example:hover .example-overlay,
+.example:focus .example-overlay {
   transform: translateY(-100%);
 }
 
